@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csstask2</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 50px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        ul {
+            background-color: rgb(158, 221, 239);
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            width: 100%;
+        }
+
+        .left li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: blue;
+            display: block;
+            padding: 10px;
+        }
+
+        .left li a:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .right {
+            margin: auto;
+        }
+
+        .right nav ul {
+            display: flex;
+            background-color: rgb(190, 186, 186);
+            padding: 0;
+        }
+
+        .right nav ul li {
+            border-right: 1px solid blue;
+            text-align: center;
+            padding: 0;
+        }
+
+        .right nav ul li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: blue;
+            display: block;
+            padding: 10px;
+        }
+
+        .right nav ul li a:hover {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>vertical Navigation Bar</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <h1>Horizontal Navigation Bar</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
