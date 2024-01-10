@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csstask4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5em;
+        }
+
+        .left .btn {
+            height: 100px;
+            width: 200px;
+            color: white;
+            margin-bottom: 2em;
+            border: none;
+            outline: none;
+            border-radius: 13px;
+            margin-left: -110px;
+            text-align: left;
+            padding-left: 18px;
+            transition: 0.5s;
+            font-size: 20px;
+        }
+
+        .green {
+            background-color: rgb(4 169 109);
+        }
+
+        .blue {
+            background-color: rgb(33 150 243);
+        }
+
+        .red {
+            background-color: rgb(244 66 54);
+        }
+
+        .grey {
+            background-color: rgb(85 85 85);
+        }
+
+        .btn:hover {
+            margin-left: -10px;
+            text-align: center;
+        }
+
+        .right {
+            position: absolute;
+            left: 15em;
+            top: 5em;
+        }
+
+        .right p {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <button class="green btn">Home</button>
+            <button class="blue btn">HTML</button>
+            <button class="red btn">CSS</button>
+            <button class="grey btn">Bootstrap</button>
+        </div>
+        <div class="right">
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+
+</html>
