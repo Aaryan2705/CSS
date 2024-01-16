@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csstask6</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            background-color: rgb(220, 217, 217);
+            height: 80vh;
+            width: 80vh;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 200px;
+            position: absolute;
+            transform: translate(-50%);
+            top: 2em;
+            left: 50%;
+            border-radius: 50%;
+        }
+
+        form {
+            position: relative;
+            top: 15em;
+            left: 2em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 85%;
+            margin-bottom: 15px;
+            border: 1px solid #cbc9c9;
+            padding: 10px;
+            color: #828080;
+        }
+
+        .btn {
+            font-size: 17px;
+            background-color: #4cb050;
+            color: #fff;
+            width: 88.5%;
+        }
+        .remember{
+            position: absolute;
+            display: flex;
+            font-size: 15px;
+            width: 50%;
+            left: 2em;
+            top: 14.5em;
+
+        }
+        .checkbox{
+            position: absolute;
+            left: -18em;
+            top: 16.5em;
+        }
+        .cancel{
+            margin-top: 3em;
+            height: 60px;
+            width: 88.5%;
+            background-color: rgb(156, 153, 153) ;
+            border-radius: 5px;
+
+        }
+        .cancel input{
+            width: 20%;
+            background-color: rgb(216, 63, 63);
+            color: white;
+            border: 0;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .cancel a{
+            margin-left: 19em;
+            font-size: 15px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="user.jpg" alt="user image">
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" value="Enter Username">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" value="Enter Password">
+            <input class="btn" type="button" value="Login">
+            <input checked class="checkbox" type="checkbox" name="remember" id="">
+            <label class="remember" for="remember">Remember me</label>
+            <div class="cancel">
+                <input type="button" value="cancel">
+                <a href="">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
