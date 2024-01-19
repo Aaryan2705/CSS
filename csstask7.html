@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csstask7</title>
+    <style>
+        body {
+            background-color: #a22b55;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+
+        }
+
+        .container {
+            background-color: #75203f;
+            width: 50%;
+            margin: auto;
+        }
+
+        table {
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            width: auto;
+            text-align: left;
+            color: white;
+        }
+
+        input {
+            width: 98%;
+        }
+
+        textarea {
+            width: 98%;
+        }
+
+        #submit {
+            width: 100%;
+            margin-top: 1em;
+            position: relative;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #75203f;
+            border-radius: 10px;
+            border: 0;
+            outline: none;
+            background-color: white;
+
+        }
+
+        .gender {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <table cellpadding="10">
+            <caption>Registration Form</caption>
+            <tr>
+                <th>
+                    <label for="firstname">Name:</label>
+                </th>
+                <td>
+                    <input type="text" name="firstname">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">Email:</label>
+                </th>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password">Password:</label>
+                </th>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone">Phone Number</label>
+                </th>
+                <td>
+                    <input type="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender:</label>
+                </th>
+                <td class="gender">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="language">Languages Known</label>
+                </th>
+                <td id="language">
+                    <select name="" id="">
+                        <option selected value="select">Select Languages</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">English</option>
+                        <option value="German">German</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <th>
+                    <label for="code">Zip Code:</label>
+                </th>
+                <td>
+                    <input type="number" name="code">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="about">About:</label>
+                </th>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10">Write about yourself...</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input id="submit" type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
